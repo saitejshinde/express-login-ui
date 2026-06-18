@@ -32,7 +32,6 @@ pipeline {
                 '''
             }
         }
-
         stage('Build Docker Image') {
             steps {
                 sh '''
@@ -42,7 +41,7 @@ pipeline {
                 '''
             }
         }
-
+        
         stage('Docker Login') {
 
             environment {
