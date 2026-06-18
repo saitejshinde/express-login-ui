@@ -7,8 +7,8 @@ pipeline {
     }
 
     environment {
-        APP_NAME       = "demo03-jenkins"
-        IMAGE_NAME     = "saitejshinde/demo03-jenkins"
+        APP_NAME       = "express-login-ui"
+        IMAGE_NAME     = "saitejshinde/express-login-ui"
         CONTAINER_PORT = "3000"
         HOST_PORT      = "3000"
     }
