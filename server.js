@@ -9,6 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // test endpoint
 app.get('/hello',(req,res)=>{
+    console.log("saitej");
     res.send('Hello Jenkins!!!!');
 });
 
@@ -17,6 +18,7 @@ app.post('/login',(req,res)=>{
     const {user, passwd}= req.body;
     if(user === passwd)
         res.send({
+            volume:"Hello From Saitej",
             status: "success",
             message: "Login successful"
         });
