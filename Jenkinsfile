@@ -7,7 +7,7 @@ pipeline {
     }
 
     environment {
-        APP_NAME       = "express-login-ui"
+        APP_NAME       = "demo03-jenkins"
         IMAGE_NAME     = "saitejshinde/demo03-jenkins"
         CONTAINER_PORT = "3000"
         HOST_PORT      = "3000"
@@ -41,7 +41,7 @@ pipeline {
                 '''
             }
         }
-        
+
         stage('Docker Login') {
 
             environment {
